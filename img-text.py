@@ -22,7 +22,10 @@ class code :
 
     im = np.array(img)
     w, h = im.shape
-    getAverageL= np.average(im.reshape(w * h))
+    getAverageL= im.reshape(w * h)
+
+
+
 
     W, H = img.size[0], img.size[1]
     print("input image dims: %d x %d" % (W, H))
@@ -55,7 +58,9 @@ class code :
                 x2 = W
 
             image = img.crop((x1, y1, x2, y2))
-            avg = int(getAverageL)
+            avg = int(getAverageL[i])
+            print(j,i)
+            print (avg)
             gsval = ASCII_CHARS[int((avg * 11) / 255)]
 
         #       for f in range(aimg.index(aimg[-1]) + 1):
