@@ -13,7 +13,7 @@ class code :
 
     new_width = 80
     if args.width:
-        new_width = float(args.scale)
+        new_width = int(args.width)
 
     img = Image.open(filename)
     ASCII_CHARS = "@#S%?*+;:,."
