@@ -10,6 +10,10 @@ Clone this repository
 ```markdown
 git clone https://github.com/JignasP/image-to-text.git
 ```
+Install required packages
+```markdown
+pip install requirements.txt
+```
 Convert image to ASCII
 ```markdown
 python image-text.py --file <file path>
