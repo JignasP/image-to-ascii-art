@@ -27,7 +27,7 @@ class code :
     for y in range(img.size[1]):
         for x in range(img.size[0]):
             gray = img.getpixel((x, y))
-            txt += ASCII_CHARS[int(gray / 255 * len(ASCII_CHARS))]
+            txt += ASCII_CHARS[int(gray / 255 * (len(ASCII_CHARS)-1))]
         txt += '\n'
     print(txt)
 
